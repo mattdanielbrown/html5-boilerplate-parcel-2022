@@ -1,0 +1,26 @@
+{
+  "name": "html5-boilerplate-parcel-2022",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "author": "Matt Daniel Brown",
+  "scripts": {
+    "build": "parcel build index.html",
+    "dev": "parcel index.html --open",
+    "start": "npm run build && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.1",
+    "postcss": "^8.4.20",
+    "sass": "^1.56.2"
+  },
+  "dependencies": {
+    "bourbon": "^7.2.0",
+    "inter-ui": "^3.19.3",
+    "mobi.css": "^3.1.1",
+    "modern-normalize": "^1.1.0",
+    "reseter.css": "^2.0.0",
+    "sanitize.css": "^13.0.0"
+  }
+}
