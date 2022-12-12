@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML5 Boilerplate and Parcel On Netlify | Home</title>
+  <meta name="description" content="HTML5 Boilerplate and Parcel On Netlify">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,shrink-to-fit=no,viewport-fit=cover"/>
 
   <meta property="og:title" content="">
   <meta property="og:type" content="">
@@ -17,25 +17,233 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.scss">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+	
+	<!-- ————————————————————————————————————————————————————————————————————— -->
+	<!-- Site/Page Navigation 																								 -->
+	<!-- ————————————————————————————————————————————————————————————————————— -->
+	<nav id="site-navigation">
+		
+		<div id="mobile-navigation-control-wrapper">
+			<input type="checkbox" name="mobile-navigation-control" id="mobile-navigation-control">
+			<label for="mobile-navigation-control" id="mobile-navigation-control-label">
+				<span id="mobile-navigation-control-label-content">Menu</span>
+			</label>
+		</div>
+		
+		<ul id="site-navigation-list">
+			<li><a href="index.html" aria-current="page">Home</a></li>
+			<li><a href="page-two.html">Page Two</a></li>
+			<li><a href="#">Link</a></li>
+			<li><a href="#">Link</a></li>
+		</ul>
+	</nav>
+	
+	<!-- ————————————————————————————————————————————————————————————————————— -->
+	<!-- Site/Page Header 																										 -->
+	<!-- ————————————————————————————————————————————————————————————————————— -->
+	<header>
+		<hgroup>
+			<h1>
+				Website Title
+				<small>Page Title</small>
+			</h1>
+		</hgroup>
+	</header>
+	
+	<!-- ————————————————————————————————————————————————————————————————————— -->
+	<!-- Main Page Content  																									 -->
+	<!-- ————————————————————————————————————————————————————————————————————— -->
+	<main id="main">
+		<section id="typography">
+			<h2>Typography</h2>
+			
+			<h3>Paragraph (Body)</h3>
+			<p>This is base/body/paragraph text...</p>
+			<p>Lorem ipsum dolor sit, amet consectetur
+			   adipisicing elit. Suscipit repellat sed
+			   iusto, cum tempora dicta corporis obcaecati,
+			   incidunt tenetur nostrum, ab libero
+			   pariatur voluptatum? Nostrum ullam et
+			   aliquam libero corrupti.</p>
+			
+			<h3>Headings</h3>
+			<hgroup class="demo small-screen-only">
+				<h1>H1 Heading</h1>
+				<h2>H2 Heading</h2>
+				<h3>H3 Heading</h3>
+				<h4>H4 Heading</h4>
+				<h5>H5 Heading</h5>
+				<h6>H6 Heading</h6>
+			</hgroup>
+			<hgroup class="demo medium-screen-and-up">
+				<h1>Level One Heading <small><samp>&lt;h1&gt;</samp></small></h1>
+				<h2>Level Two Heading <small><samp>&lt;h2&gt;</samp></small></h2>
+				<h3>Level Three Heading <small><samp>&lt;h3&gt;</samp></small></h3>
+				<h4>Level Four Heading <small><samp>&lt;h4&gt;</samp></small></h4>
+				<h5>Level Five Heading <small><samp>&lt;h5&gt;</samp></small></h5>
+				<h6>Level Six Heading <small><samp>&lt;h6&gt;</samp></small></h6>
+			</hgroup>
+			
+			<h3>Other Styles</h3>
+			
+			<h4>Inline Elements</h4>
+			<p>You can use the mark tag to
+				<mark>highlight</mark>
+			   text. <br>
+				<del>This line of text is meant to be treated as deleted text.</del>
+				<br>
+				<s>This line of text is meant to be treated as no longer accurate.</s> <br>
+				<ins>This line of text is meant to be treated as an addition to the document.</ins>
+				<br>
+				<u>This line of text will render as underlined.</u> <br>
+				<strong>This line rendered as bold text.</strong> <br>
+				<em>This line rendered as italicized text.</em> <br>
+				<small>This line of text is meant to be treated as fine print.</small> <br>
+			</p>
+			
+			<h4>Fixed-Width Elements</h4>
+			
+			<h5>Preformatted Text</h5>
+			<pre><code>&lt;p&gt;Sample text here...&lt;/p&gt;
+&lt;p&gt;And another line of sample text here...&lt;/p&gt;
+</code></pre>
+			
+			<h5>Inline Code</h5>
+			<p>For example, <code>&lt;section&gt;</code> should be wrapped as inline.</p>
+			
+			<h5>User Input</h5>
+			<p>To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
+			   To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>h</kbd></kbd>.</p>
+			
+			<h5>Variables</h5>
+			<p><var>y</var> = <var>m</var><var>x</var> + <var>b</var></p>
+			
+			<h5>Sample Output</h5>
+			<p><samp>This text is meant to be treated as sample output from a computer program.</samp></p>
+		</section>
+		<section id="buttons">
+			<h2>Buttons</h2>
+			
+			<h3>Default Button</h3>
+			<button type="button">Default</button>
+			
+			<h3>Button Variants</h3>
+			<ul class="button-list">
+				<li>
+					<button type="button">Default</button>
+				</li>
+				<li>
+					<button type="button" class="primary">Primary</button>
+				</li>
+				<li>
+					<button type="button" class="secondary">Secondary</button>
+				</li>
+				<li>
+					<button type="button" class="round">Rounded</button>
+				</li>
+				<li>
+					<button type="button" class="outline">Outline</button>
+				</li>
+				<!-- <li><button type="button" class="round primary">Rounded</button></li> -->
+				<!-- <li><button type="button" class="round secondary">Rounded</button></li> -->
+				<!-- <li><button type="button" class="round outline">Rounded</button></li> -->
+				<!-- <li><button type="button" class="primary outline">Outline</button></li> -->
+				<!-- <li><button type="button" class="secondary outline">Outline</button></li> -->
+			</ul>
+		</section>
+		<section id="form-inputs">
+			<h2>Form Inputs</h2>
+			<form action="">
+				<fieldset>
+					<legend>Text-Based Inputs</legend>
+					
+					<label for="text-input">Text Input</label>
+					<input type="text" name="text-input" id="text-input" placeholder="AaBbCc...">
+					
+					<label for="email-input">Email Input</label>
+					<input type="email" name="email-input" id="email-input" placeholder="user@example.com">
+					
+					<label for="textarea-input">Textarea Input</label>
+					<textarea name="textarea-input" id="textarea-input" cols="30" rows="10" placeholder="Multiline input..."></textarea>
+				
+				
+				</fieldset>
+				
+				<fieldset>
+					<legend>Checkbox Inputs</legend>
+					<input type="checkbox" name="checkbox-one" id="checkbox-one" value="checkbox-one value" checked="checked">
+					<label for="checkbox-one">Checkbox One Label</label>
+					
+					<input type="checkbox" name="checkbox-two" id="checkbox-two" value="checkbox-two value">
+					<label for="checkbox-two">Checkbox Two Label</label>
+					
+					<input type="checkbox" name="checkbox-three" id="checkbox-three" value="checkbox-three value" disabled>
+					<label for="checkbox-three">(Disabled) Checkbox Three Label</label>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Radio Inputs</legend>
+					
+					<input type="radio" name="radio-input" id="radio-input-one" value="radio input one value" checked>
+					<label for="radio-input-one">Radio Input One</label>
+					
+					<input type="radio" name="radio-input" id="radio-input-two" value="radio input two value">
+					<label for="radio-input-two">Radio Input Two</label>
+					
+					<input type="radio" name="radio-input" id="radio-input-three" value="radio input three value" disabled>
+					<label for="radio-input-three">Radio Input Three</label>
+				</fieldset>
+				
+				<footer>
+					<input type="reset" value="Reset Form">
+					<input type="submit" value="Submit Form">
+				</footer>
+			</form>
+		</section>
+		<section id="media">
+			<h2>Media</h2>
+			<h3>Images</h3>
+			
+			<h4>Responsive Image</h4>
+			<img src="https://images.unsplash.com/photo-1668656692409-22b0bad273c0?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzA4MTQ3MDQ&ixlib=rb-4.0.3&q=80" alt="">
+			
+			<h4>Figure With Captioned Image</h4>
+			<figure>
+				<img src="https://images.unsplash.com/photo-1667921607926-851f5443c008?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzA4MTQzNTI&ixlib=rb-4.0.3&q=80" alt="Placeholder Image">
+				<figcaption>Figure Caption Text</figcaption>
+			</figure>
+			
+			<h4>Blockquote</h4>
+			<figure class="blockquote">
+				<blockquote>
+					<p>A well-known quote, contained in a blockquote element.</p>
+				</blockquote>
+				<figcaption class="blockquote-footer">
+					Someone famous in <cite title="Source Title">Source Title</cite>
+				</figcaption>
+			</figure>
+		</section>
+	</main>
+	
+	<!-- ————————————————————————————————————————————————————————————————————— -->
+	<!-- Site/Page Footer 																										 -->
+	<!-- ————————————————————————————————————————————————————————————————————— -->
+	<footer>
+		<p>Copyright &copy; 2022. All Rights Reserved.</p>
+	</footer>
+	
+	<!-- ===================================================================== -->
+	<!-- Javascript	 																								 					 -->
+	<!-- ===================================================================== -->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
