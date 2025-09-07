@@ -13,7 +13,7 @@
   "devDependencies": {
     "@parcel/packager-raw-url": "2.8.1",
     "@parcel/transformer-sass": "2.8.1",
-    "@parcel/transformer-webmanifest": "2.8.1",
+    "@parcel/transformer-webmanifest": "2.15.4",
     "parcel": "^2.8.1",
     "postcss": "^8.4.20",
     "sass": "^1.56.2"
